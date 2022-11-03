@@ -2,6 +2,19 @@
   "name": "netflix-clone",
   "version": "0.1.0",
   "private": true,
+  "author": "Sanidhya Kr. Verma",
+  "description": "Modern Netflix Clone using React JS",
+  "keywords": [
+    "reactjs",
+    "react",
+    "netflix-clone",
+    "tmdb-api",
+    "axios",
+    "js",
+    "javascript",
+    "html",
+    "css"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
