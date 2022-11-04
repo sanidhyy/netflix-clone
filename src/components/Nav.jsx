@@ -25,7 +25,9 @@ const Nav = () => {
     <div className={`nav ${show && "nav__black"}`}>
       <img src={logo} alt="Netflix" className="nav__logo" />
 
-      <img src={avatar} alt="Avatar" className="nav__avatar" />
+      <a href="https://github.com" target="_blank" rel="noreferrer noopener">
+        <img src={avatar} alt="Avatar" className="nav__avatar" />
+      </a>
     </div>
   );
 };
