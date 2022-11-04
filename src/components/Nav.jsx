@@ -30,7 +30,11 @@ const Nav = () => {
       <img src={logo} alt="Netflix" className="nav__logo" />
 
       {/* Avatar */}
-      <a href="https://github.com" target="_blank" rel="noreferrer noopener">
+      <a
+        href="https://github.com/Technical-Shubham-tech/netflix-clone"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <img src={avatar} alt="Avatar" className="nav__avatar" />
       </a>
     </div>
