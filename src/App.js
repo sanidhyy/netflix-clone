@@ -9,8 +9,11 @@ import Nav from "./components/Nav";
 const App = () => {
   return (
     <div className="app">
+      {/* Head */}
       <Nav />
       <Banner />
+
+      {/* Sections */}
       <Row
         title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}
