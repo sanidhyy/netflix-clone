@@ -1,8 +1,83 @@
-# Getting Started with Create React App
+# Modern Netflix Clone using React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Modern Netflix Clone using React JS](https://user-images.githubusercontent.com/71302066/200040519-7bc1cc78-9371-4a2e-b4f6-b86a3663e60b.png "Modern Netflix Clone using React JS")
 
-## Available Scripts
+[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Technical-Shubham-tech "Ask Me Anything!")
+[![GitHub license](https://img.shields.io/github/license/Technical-Shubham-tech/netflix-clone)](https://github.com/Technical-Shubham-tech/netflix-clone/blob/main/LICENSE.md "GitHub license")
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Technical-Shubham-tech/netflix-clone/commits/main "Maintenance")
+[![GitHub branches](https://badgen.net/github/branches/Technical-Shubham-tech/netflix-clone?max-age=2592000)](https://github.com/Technical-Shubham-tech/netflix-clone/branches "GitHub branches")
+[![Github commits](https://badgen.net/github/commits/Technical-Shubham-tech/netflix-clone/main?max-age=2592000)](https://github.com/Technical-Shubham-tech/netflix-clone/commits "Github commits")
+[![Netlify Status](https://api.netlify.com/api/v1/badges/25c7db67-b829-4805-b7a6-bd8b574094d2/deploy-status)](https://clone-netflixapp.netlify.app/ "Netlify Status")
+[![GitHub issues](https://img.shields.io/github/issues/Technical-Shubham-tech/netflix-clone)](https://github.com/Technical-Shubham-tech/netflix-clone/issues "GitHub issues")
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Technical-Shubham-tech/netflix-clone)](https://github.com/Technical-Shubham-tech/netflix-clone/pulls "GitHub pull requests")
+
+## ⚠️ Before you start
+
+1. Make sure **Git** and **NodeJS** is installed
+2. Create .env file in root folder.
+3. Contents of **.env**
+
+```
+REACT_TMDB_API_KEY=XXXXXXXXXXXXXXXXX
+```
+
+4. Now, to setup API, go to [TMDB Website](https://www.themoviedb.org) and create an account.
+
+5. Go to **API/API Key** and get your API.
+
+![Copy API Key](https://user-images.githubusercontent.com/71302066/200039610-0ea69082-96a4-4606-b2e8-369c2a085dfc.png "Copy API Key")
+
+6. After enabling you can get your API Keys and paste them in `.env` file in `REACT_TMDB_API_KEY`.
+
+**NOTE:** Make sure you don't share these keys publicaly.
+
+## :pushpin: How to use this App?
+
+1. Clone this **repository** to your local computer.
+2. Open **terminal** in root directory.
+3. Type and Run `npm install` or `yarn install`.
+4. Once packages are installed, you can start this app using `npm start` or `yarn start`.
+5. Now app is fully configured and you can start using this app :+1:.
+
+## :camera: Screenshots:
+
+![Modern UI/UX](https://user-images.githubusercontent.com/71302066/200040519-7bc1cc78-9371-4a2e-b4f6-b86a3663e60b.png "Modern UI/UX")
+
+![Movie Categories](https://user-images.githubusercontent.com/71302066/200040677-728e3ba9-15ef-4bf6-ab54-314c5e6421a7.png "Movie Categories")
+
+![Watch Movie Trailers](https://user-images.githubusercontent.com/71302066/200041545-f6e8bdf8-b771-4a51-893f-cc9f68d03ef0.png "Watch Movie Trailers")
+
+## :gear: Built with
+
+[<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" width="150" height="40" />](https://www.javascript.com/ "JavaScript")
+
+[<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" width="150" />](https://reactjs.org/ "React JS")
+
+[<img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with Love">](https://github.com/Technical-Shubham-tech/ "Built with Love")
+
+## :wrench: Stats
+
+![Stats for this App](https://user-images.githubusercontent.com/71302066/195340258-01f5635d-fb2c-4dd2-877e-1785a270780a.svg "Stats for this App")
+
+## :exclamation: Known Issues
+
+Some movie trailers are not able to opened and some movies are not fetched. This is not the app fault and is caused by API. However, it will be solved in future.
+
+## :raised_hands: Contribute
+
+You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
+
+## :rocket: Follow Me
+
+[![GitHub followers](https://img.shields.io/github/followers/Technical-Shubham-tech?style=social&label=Follow&maxAge=2592000)](https://github.com/Technical-Shubham-tech "Follow Me")
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FTechnical-Shubham-tech%2Fmedical-chat-app "Tweet")
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCNAz_hUVBG2ZUN8TVm0bmYw "Subscribe my Channel")
+
+## :star: Give A Star
+
+You can also give this repository a star to show more people and they can use this repository.
+
+## :books: Available Scripts
 
 In the project directory, you can run:
 
@@ -39,7 +114,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## :page_with_curl: Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
