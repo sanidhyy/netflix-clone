@@ -7,7 +7,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Technical-Shubham-tech/netflix-clone/commits/main "Maintenance")
 [![GitHub branches](https://badgen.net/github/branches/Technical-Shubham-tech/netflix-clone?max-age=2592000)](https://github.com/Technical-Shubham-tech/netflix-clone/branches "GitHub branches")
 [![Github commits](https://badgen.net/github/commits/Technical-Shubham-tech/netflix-clone/main?max-age=2592000)](https://github.com/Technical-Shubham-tech/netflix-clone/commits "Github commits")
-[![Netlify Status](https://api.netlify.com/api/v1/badges/25c7db67-b829-4805-b7a6-bd8b574094d2/deploy-status)](https://clone-netflixapp.netlify.app/ "Netlify Status")
+[![Netlify Status](https://api.netlify.com/api/v1/badges/02fdf92c-0e3e-44bc-b5f0-71ac6a064286/deploy-status)](https://clone-netflixapp.netlify.app/ "Netlify Status")
 [![GitHub issues](https://img.shields.io/github/issues/Technical-Shubham-tech/netflix-clone)](https://github.com/Technical-Shubham-tech/netflix-clone/issues "GitHub issues")
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Technical-Shubham-tech/netflix-clone)](https://github.com/Technical-Shubham-tech/netflix-clone/pulls "GitHub pull requests")
 
