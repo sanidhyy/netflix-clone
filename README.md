@@ -18,7 +18,7 @@
 3. Contents of **.env**
 
 ```
-REACT_TMDB_API_KEY=XXXXXXXXXXXXXXXXX
+REACT_APP_TMDB_API_KEY=XXXXXXXXXXXXXXXXX
 ```
 
 4. Now, to setup API, go to [TMDB Website](https://www.themoviedb.org) and create an account.
@@ -27,7 +27,7 @@ REACT_TMDB_API_KEY=XXXXXXXXXXXXXXXXX
 
 ![Copy API Key](https://user-images.githubusercontent.com/71302066/200039610-0ea69082-96a4-4606-b2e8-369c2a085dfc.png "Copy API Key")
 
-6. After enabling you can get your API Keys and paste them in `.env` file in `REACT_TMDB_API_KEY`.
+6. After enabling you can get your API Keys and paste them in `.env` file in `REACT_APP_TMDB_API_KEY`.
 
 **NOTE:** Make sure you don't share these keys publicaly.
 
