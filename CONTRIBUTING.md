@@ -1,7 +1,7 @@
 ## Contributing
 
-[fork]: https://github.com/Technical-Shubham-tech/netflix-clone/fork
-[pr]: https://github.com/Technical-Shubham-tech/netflix-clone/compare
+[fork]: https://github.com/sanidhyy/netflix-clone/fork
+[pr]: https://github.com/sanidhyy/netflix-clone/compare
 [style]: https://standardjs.com/
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
