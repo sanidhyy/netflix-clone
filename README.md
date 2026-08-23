@@ -39,6 +39,14 @@ REACT_APP_TMDB_API_KEY=XXXXXXXXXXXXXXXXX
 4. Once packages are installed, you can start this app using `npm start` or `yarn start`.
 5. Now app is fully configured and you can start using this app :+1:.
 
+### :raising_hand: Need Help?
+
+If you run into issues during installation or setup:
+
+- **GitHub Discussions** — [Open a Q&A discussion](https://github.com/sanidhyy/netflix-clone/discussions/new?category=q-a) for setup and troubleshooting help.
+- **Email** — [sanidhyyy@gmail.com](mailto:sanidhyyy@gmail.com)
+- **Discord** — `sanidhyy`
+
 ## :camera: Screenshots:
 
 ![Modern UI/UX](https://user-images.githubusercontent.com/71302066/200040519-7bc1cc78-9371-4a2e-b4f6-b86a3663e60b.png "Modern UI/UX")
