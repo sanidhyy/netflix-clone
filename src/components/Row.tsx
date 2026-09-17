@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
 import type { YouTubeProps } from "react-youtube";
 
 import axios from "../axios";
-import type { Movie, TmdbListResponse } from "../types/tmdb";
+import type { Movie, TmdbListResponse, TmdbVideosResponse } from "../types/tmdb";
 
 import "./Row.css";
 
@@ -12,6 +11,14 @@ type RowProps = {
   title: string;
   fetchUrl: string;
   isLargeRow?: boolean;
+};
+
+const getMediaType = (movie: Movie) => {
+  if (movie.media_type === "tv" || movie.media_type === "movie") {
+    return movie.media_type;
+  }
+
+  return movie.title ? "movie" : "tv";
 };
 
 const Row = ({ title, fetchUrl, isLargeRow = false }: RowProps) => {
@@ -36,24 +43,30 @@ const Row = ({ title, fetchUrl, isLargeRow = false }: RowProps) => {
     },
   };
 
-  const handleClick = (movie: Movie) => {
+  const handleClick = async (movie: Movie) => {
     if (trailerURL) {
       setTrailerURL("");
       return;
     }
 
-    movieTrailer(movie.name || movie.title || movie.original_title || "")
-      .then((url) => {
-        if (!url || Array.isArray(url)) {
-          return;
-        }
+    try {
+      const mediaType = getMediaType(movie);
+      const request = await axios.get<TmdbVideosResponse>(
+        `/${mediaType}/${movie.id}/videos?language=en-US`,
+      );
+      const youtubeVideos = request.data.results.filter(
+        (video) => video.site === "YouTube",
+      );
+      const trailer =
+        youtubeVideos.find((video) => video.type === "Trailer") ??
+        youtubeVideos[0];
 
-        const urlParams = new URLSearchParams(new URL(url).search);
-        setTrailerURL(urlParams.get("v") ?? "");
-      })
-      .catch((error: unknown) => {
-        console.log(error);
-      });
+      if (trailer) {
+        setTrailerURL(trailer.key);
+      }
+    } catch (error: unknown) {
+      console.log(error);
+    }
   };
 
   return (
@@ -76,7 +89,9 @@ const Row = ({ title, fetchUrl, isLargeRow = false }: RowProps) => {
               src={`${baseUrl}${imagePath}`}
               alt={movie.name || movie.title || "Movie poster"}
               key={movie.id}
-              onClick={() => handleClick(movie)}
+              onClick={() => {
+                void handleClick(movie);
+              }}
             />
           );
         })}

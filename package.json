@@ -13,7 +13,6 @@
   "dependencies": {
     "@netlify/functions": "^6.0.0",
     "axios": "^1.20.0",
-    "movie-trailer": "^3.2.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-youtube": "^10.1.0"
@@ -29,16 +28,14 @@
     "vite": "^8.3.0"
   },
   "author": "Sanidhya Kr. Verma",
-  "description": "Modern Netflix Clone using React JS",
+  "description": "Modern Netflix Clone using React, Vite, and TypeScript",
   "keywords": [
-    "reactjs",
     "react",
+    "vite",
+    "typescript",
     "netflix-clone",
     "tmdb-api",
-    "axios",
-    "js",
-    "javascript",
-    "html",
-    "css"
+    "netlify-functions",
+    "axios"
   ]
 }
