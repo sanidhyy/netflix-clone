@@ -1,35 +1,29 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-import logo from "../assets/logo.png";
 import avatar from "../assets/avatar.png";
+import logo from "../assets/logo.png";
 
-// CSS
 import "./Nav.css";
 
-// Nav
 const Nav = () => {
   const [show, setShow] = useState(false);
 
-  // navbar show/hide onscroll
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setShow(true);
-      } else {
-        setShow(false);
-      }
-    });
+    const handleScroll = () => {
+      setShow(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div className={`nav ${show && "nav__black"}`}>
-      {/* Brand Logo */}
+    <div className={`nav ${show ? "nav__black" : ""}`}>
       <img src={logo} alt="Netflix" className="nav__logo" />
 
-      {/* Avatar */}
       <a
         href="https://github.com/sanidhyy/netflix-clone"
         target="_blank"
