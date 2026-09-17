@@ -13,7 +13,7 @@
 
 ## ⚠️ Before you start
 
-1. Make sure **Git**, **Node.js**, and **pnpm** are installed.
+1. Make sure **Git** and **Node.js** are installed.
 2. Create a `.env` file in the project root.
 3. Contents of **.env**
 
@@ -26,9 +26,7 @@ TMDB_API_KEY=XXXXXXXXXXXXXXXXX
 
 ![Copy API Key](https://user-images.githubusercontent.com/71302066/200039610-0ea69082-96a4-4606-b2e8-369c2a085dfc.png "Copy API Key")
 
-6. Paste the key into `.env` as `TMDB_API_KEY`. Do **not** prefix it with `VITE_` or `REACT_APP_` — the key is used only by a Netlify Function, not the browser bundle.
-
-If this site is already deployed on Netlify, delete the old `REACT_APP_TMDB_API_KEY` variable and add `TMDB_API_KEY` with Functions runtime scope.
+6. Paste the key into `.env` as `TMDB_API_KEY`.
 
 **NOTE:** Make sure you don't share these keys publicaly.
 
@@ -36,8 +34,8 @@ If this site is already deployed on Netlify, delete the old `REACT_APP_TMDB_API_
 
 1. Clone this **repository** to your local computer.
 2. Open **terminal** in root directory.
-3. Type and Run `pnpm install`.
-4. Once packages are installed, start the app with `pnpm dev` or `pnpm start`.
+3. Type and Run `npm install` or `pnpm install`.
+4. Once packages are installed, start the app with `npm run dev` or `pnpm dev`.
 5. Open [http://localhost:5173](http://localhost:5173) in your browser.
 6. Now app is fully configured and you can start using this app :+1:.
 
@@ -96,24 +94,22 @@ You can also give this repository a star to show more people and they can use th
 
 In the project directory, you can run:
 
-### `pnpm dev` / `pnpm start`
+### `npm run dev` / `pnpm dev`
 
-Runs the app in development mode with Vite.\
+Runs the app in development mode with Vite.
 Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
-
-Netlify Functions (including the TMDB proxy) are emulated in this dev server via `@netlify/vite-plugin`.
 
 The page will reload when you make changes.
 
-### `pnpm lint`
+### `npm run lint` / `pnpm lint`
 
 Lints the project with oxlint.
 
-### `pnpm build`
+### `npm run build` / `pnpm build`
 
 Type-checks with TypeScript and builds the app for production to the `dist` folder.
 
-### `pnpm preview`
+### `npm run preview` / `pnpm preview`
 
 Serves the production build locally for a final check.
 
