@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^6.0.0",
-    "axios": "^1.18.0",
+    "axios": "^1.20.0",
     "movie-trailer": "^2.1.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
