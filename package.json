@@ -12,7 +12,7 @@
   "dependencies": {
     "@netlify/functions": "^6.1.1",
     "axios": "^1.20.0",
-    "react": "^19.3.0",
+    "react": "^19.3.1",
     "react-dom": "^19.3.0",
     "react-youtube": "^10.1.0"
   },
